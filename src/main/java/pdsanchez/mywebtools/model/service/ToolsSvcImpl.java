@@ -57,12 +57,23 @@ public class ToolsSvcImpl implements ToolsSvc {
 
   @Override
   public List<Tool> getTools(Category category, Subcategory subcategory) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    if (category == null || category.getCategoryName().isEmpty()) {
+//      throw new NullPointerException("Category is null or its name is empty");
+//    }
+//    if (subcategory == null || subcategory.getSubcategoryName().isEmpty()) {
+//      throw new NullPointerException("Subcategory is null or its name is empty");
+//    }
+    
+    return toolDAO.findAll(category, subcategory);
   }
 
   @Override
   public List<Tool> getTools(Category category) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    if (category == null || category.getCategoryName().isEmpty()) {
+//      throw new NullPointerException("Category is null or its name is empty");
+//    }
+    
+    return toolDAO.findAll(category);
   }
 
   @Override

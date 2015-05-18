@@ -22,56 +22,62 @@ import pdsanchez.mywebtools.model.dao.contract.GenericDAO;
 @Component
 public abstract class GenericDAOJPAImpl<T, PK extends Serializable> implements GenericDAO<T, PK> {
 
-  private final Class<T> entityClass;
+    private final Class<T> entityClass;
 
-  @PersistenceContext(unitName = "DEFAULT_PU")
-  protected EntityManager em;
+    @PersistenceContext(unitName = "DEFAULT_PU")
+    protected EntityManager em;
 
-  public GenericDAOJPAImpl(Class<T> entityClass) {
-    this.entityClass = entityClass;
-  }
+    public GenericDAOJPAImpl(Class<T> entityClass) {
+        this.entityClass = entityClass;
+    }
 
-  protected EntityManager getEntityManager() {
-    return em;
-  }
+    protected EntityManager getEntityManager() {
+        return em;
+    }
 
-  @Transactional
-  @Override
-  public void create(T entity) {
-    getEntityManager().persist(entity);
-  }
+    @Transactional
+    @Override
+    public void create(T entity) {
+        getEntityManager().persist(entity);
+    }
 
-  @Transactional
-  @Override
-  public void update(T entity) {
-    getEntityManager().merge(entity);
-  }
+    @Transactional
+    @Override
+    public void update(T entity) {
+        getEntityManager().merge(entity);
+    }
 
-  @Transactional
-  @Override
-  public void delete(T entity) {
-    getEntityManager().remove(getEntityManager().merge(entity));
-  }
+    @Transactional
+    @Override
+    public void delete(T entity) {
+        getEntityManager().remove(getEntityManager().merge(entity));
+    }
 
-  @Override
-  public T find(PK id) {
-    return getEntityManager().find(entityClass, id);
-  }
+    @Override
+    public T find(PK id) {
+        return getEntityManager().find(entityClass, id);
+    }
 
-  @Override
-  public List<T> findAll() {
-    javax.persistence.criteria.CriteriaQuery cq = getEntityManager().getCriteriaBuilder().createQuery();
-    cq.select(cq.from(entityClass));
-    return getEntityManager().createQuery(cq).getResultList();
-  }
+    @Override
+    public List<T> findAll() {
+        javax.persistence.criteria.CriteriaQuery cq = getEntityManager().getCriteriaBuilder().createQuery();
+        cq.select(cq.from(entityClass));
+        return getEntityManager().createQuery(cq).getResultList();
+    }
 
-  @Override
-  public int count() {
-    javax.persistence.criteria.CriteriaQuery cq = getEntityManager().getCriteriaBuilder().createQuery();
-    javax.persistence.criteria.Root<T> rt = cq.from(entityClass);
-    cq.select(getEntityManager().getCriteriaBuilder().count(rt));
-    javax.persistence.Query q = getEntityManager().createQuery(cq);
-    return ((Long) q.getSingleResult()).intValue();
-  }
+    @Override
+    public int count() {
+        javax.persistence.criteria.CriteriaQuery cq = getEntityManager().getCriteriaBuilder().createQuery();
+        javax.persistence.criteria.Root<T> rt = cq.from(entityClass);
+        cq.select(getEntityManager().getCriteriaBuilder().count(rt));
+        javax.persistence.Query q = getEntityManager().createQuery(cq);
+        return ((Long) q.getSingleResult()).intValue();
+    }
 
+//    public <T> int deleteAllEntities(Class<T> entityType) {
+//        CriteriaBuilder builder = em.getCriteriaBuilder();
+//        CriteriaDelete<T> query = builder.createCriteriaDelete(entityType);
+//        query.from(entityType);
+//        return em.createQuery(query).executeUpdate();
+//    }
 }

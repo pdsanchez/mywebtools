@@ -9,7 +9,7 @@
         <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>webtools</title>
+        <title>administracion webtools</title>
 
         <h:outputStylesheet library="css" name="bootstrap.min.css" />
         <h:outputStylesheet library="css" name="style.css" />
@@ -32,26 +32,33 @@
                 </div>
                 <h:form>
                     <div class="navbar-collapse collapse">
-                        <!--categories-->
                         <ul class="nav navbar-nav navbar-right">
-                            <!--search-->
+                            <li>New Tool</li>
+                            <li><h:commandLink value="logout" action="#{loginMBean.logout()}"/></li>
                         </ul>
                     </div>
                 </h:form>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 main">                    
+                <div class="col-md-2 sidebar">
+                    <ul class="nav nav-sidebar">
+                        <li><h:link value="Alta curso" outcome="alta-curso"/></li>
+                        <li><h:link value="Matricular alumno" outcome="matricula-alumno"/></li>
+                        <!--<li><a href="#">Crear Examen</a></li>-->
+                    </ul>  
+                </div>
+                <div class="col-md-10 main">                    
                     <ui:insert name="content" />                    
                 </div>
             </div>
         </div>
 
         <h:outputScript  library="js" name="jquery.min.js" target="body"/>
+        <h:outputScript  library="js" name="jquery-ui.min.js" target="body"/>
         <h:outputScript  library="js" name="bootstrap.min.js" target="body"/>
-
     </h:body>
 
 </html>

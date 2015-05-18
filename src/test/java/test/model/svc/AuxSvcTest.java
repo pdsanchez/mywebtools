@@ -40,10 +40,10 @@ public class AuxSvcTest {
   public void successLoaderTest() {
       int t = auxSvc.loadTools();
       
-      Assert.assertEquals(77, t);
-      Assert.assertEquals(77, toolDao.count()); // tools
-      Assert.assertEquals(3, catDao.count()); // categories
-      Assert.assertEquals(15, scatDao.count()); // subcategories
+      Assert.assertEquals(127, t);
+      Assert.assertEquals(127, toolDao.count()); // tools
+      Assert.assertEquals(4, catDao.count()); // categories
+      Assert.assertEquals(29, scatDao.count()); // subcategories
   }
   
 }

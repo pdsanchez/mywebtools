@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:p="http://www.springframework.org/schema/p"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+          http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+  <!-- DataSource JNDI -->
+  <!--<jee:jndi-lookup id="datasource" jndi-name="jdbc/academiaDS"/>-->
+  <bean id="datasource" 
+        class="org.apache.commons.dbcp.BasicDataSource"
+        p:driverClassName="com.mysql.jdbc.Driver"
+        p:url="jdbc:mysql://localhost:3306/mywebtools"
+        p:username=""
+        p:password=""/>
+  
+  <!-- Entity Manager + Hibernate -->
+  <bean id="entityFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+    <property name="persistenceUnitName" value="DEFAULT_PU"/>
+    <property name="dataSource" ref="datasource"/>
+    <property name="jpaVendorAdapter">
+      <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+        <property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect"/>
+      </bean>
+    </property>
+  </bean>
+  
+  <!-- Transactions -->
+  <bean id="txMgr" class="org.springframework.orm.jpa.JpaTransactionManager">
+    <property name="entityManagerFactory" ref="entityFactory"/>
+  </bean>
+  
+  <!-- permite gestionar las transacciones mediante anotaciones -->
+  <tx:annotation-driven transaction-manager="txMgr"/>
+  
+  <!-- Context -->
+  <context:annotation-config/>
+  
+  <context:component-scan base-package="pdsanchez.mywebtools.model.dao.jpa,
+                                        pdsanchez.mywebtools.model.service"/>
+
+    
+</beans>

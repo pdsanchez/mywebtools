@@ -118,4 +118,9 @@ public class ToolSvcTest {
     toolSvc.addTool(null);
   }
   
+  @Test
+  public void successGetToolsByCategory() {
+    
+    
+  }
 }

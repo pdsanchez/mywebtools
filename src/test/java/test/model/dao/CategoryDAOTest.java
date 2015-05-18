@@ -37,8 +37,7 @@ public class CategoryDAOTest {
 //  }
     @Test
     public void successCreateTest() {
-        Category category = new Category("Category1");
-        catDao.create(category);
+        Category category = this.createCategory();
         assertEquals(catDao.count(), 1);
 
         int id = category.getIdCategory();
@@ -50,8 +49,7 @@ public class CategoryDAOTest {
 
     @Test
     public void successFindTest() {
-        Category category = new Category("Category1");
-        catDao.create(category);
+        Category category = this.createCategory();
 
         int id = category.getIdCategory();
         Category c = catDao.find(id);
@@ -68,8 +66,7 @@ public class CategoryDAOTest {
 
     @Test
     public void successUpdateTest() {
-        Category category = new Category("Category1");
-        catDao.create(category);
+        Category category = this.createCategory();
 
         int id = category.getIdCategory();
         Category c = catDao.find(id);
@@ -84,8 +81,7 @@ public class CategoryDAOTest {
 
     @Test
     public void successCountTest() {
-        Category category = new Category("Category1");
-        catDao.create(category);
+        Category category = this.createCategory();
         assertEquals(catDao.count(), 1);
 
         catDao.delete(category);
@@ -94,8 +90,7 @@ public class CategoryDAOTest {
 
     @Test
     public void successDeleteTest() {
-        Category category = new Category("Category1");
-        catDao.create(category);
+        Category category = this.createCategory();
         assertEquals(catDao.count(), 1);
 
         catDao.delete(category);
@@ -107,8 +102,7 @@ public class CategoryDAOTest {
 
     @Test
     public void successFindByNameTest() {
-        Category category = new Category("Category1");
-        catDao.create(category);
+        Category category = this.createCategory();
 
         Category c = catDao.find("Category1");
         assertNotNull(c);
@@ -123,5 +117,11 @@ public class CategoryDAOTest {
 
         catDao.delete(category);
         assertEquals(catDao.count(), 0);
+    }
+    
+    private Category createCategory() {
+        Category category = new Category("Category1");
+        catDao.create(category);
+        return category;
     }
 }

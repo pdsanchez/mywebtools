@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    
+    <!-- spring -->
+    <application>
+        <el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+    </application>
+
+    <!-- i18n -->
+    <!--    <application>
+        <locale-config>
+            <supported-locale>es</supported-locale>
+            <supported-locale>en</supported-locale>
+        </locale-config>
+        <message-bundle>Messages</message-bundle>
+        <resource-bundle>
+            <base-name>textos</base-name>
+            <var>txt</var>    
+        </resource-bundle>
+    </application>-->
+
+    <!-- Validadores -->
+    <!--    <validator>
+        <validator-class>validadores.ValidadorPassword</validator-class>
+        <validator-id>ejercicio10.validadorPwd</validator-id>
+    </validator>-->
+
+</faces-config>
