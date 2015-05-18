@@ -1,0 +1,127 @@
+gral	Playgrounds	jsbin	http://jsbin.com/	
+gral	Playgrounds	liveweave	http://liveweave.com/	
+gral	Playgrounds	jsfiddle	http://jsfiddle.net/	
+gral	Boilerplate	html5boilerplate	http://html5boilerplate.com/	
+gral	Boilerplate	html5reset	http://html5reset.org/	
+gral	Boilerplate	responsify.it	http://responsify.it/	
+gral	Boilerplate	fluidbaselinegrid	http://fluidbaselinegrid.com/	
+gral	Boilerplate	goldilocksapproach	http://goldilocksapproach.com/	
+gral	Boilerplate	gridless-boilerplate	http://thatcoolguy.github.io/gridless-boilerplate	
+gral	Boilerplate	responsiveboilerplate	http://responsiveboilerplate.com/	
+gral	Boilerplate	skeleton	http://www.getskeleton.com/	
+gral	Boilerplate	99lime	http://www.99lime.com/	
+gral	Boilerplate	goldengridsystem	http://goldengridsystem.com/	
+gral	Boilerplate	zurb	http://foundation.zurb.com/	
+gral	Boilerplate	320andup	http://stuffandnonsense.co.uk/projects/320andup/	
+gral	Boilerplate	320andup	https://github.com/malarkey/320andup	
+gral	Templates	typeandgrids	http://www.typeandgrids.com/	
+gral	Templates	html5up	http://html5up.net/	
+gral	Mockups	placehold.it	http://placehold.it/	Image placeholder service
+gral	Validation	html5.validator	http://html5.validator.nu/	
+gral	Validation	validator.w3	http://validator.w3.org/	
+gral	Validation	css-validator	http://jigsaw.w3.org/css-validator	
+gral	Validation	checklink	http://validator.w3.org/checklink	Link checker (enlaces rotos)
+gral	Outliner	outliner	http://gsnedders.html5.org/outliner	
+gral	Outliner	h5o	https://code.google.com/p/h5o	
+gral	Support	wufoo	http://www.wufoo.com/html5	
+gral	Support	caniuse	http://caniuse.com/	
+gral	Support	html5please	http://html5please.com/	
+gral	Support	litmus	http://fmbip.com/litmus	
+gral	Snippets	gists	https://gist.github.com/	
+gral	Snippets	snipt	https://snipt.net/	
+gral	Promotion	yasni	http://yasni.com/	
+gral	Promotion	pipl	http://pipl.com/	
+gral	Promotion	123people	http://123people.es/	
+gral	Style guides (pattern library)	styleguide	https://github.com/EightMedia/styleguide.js	Generate a styleguide from your CSS
+gral	Style guides (pattern library)	kaleistyleguide	http://kaleistyleguide.com/	Generates bootstrap-like documentation for your own CSS
+gral	Style guides (pattern library)	stylifyme	http://stylifyme.com/	overview of the style guide of a site
+gral	Style guides (pattern library)	X-rayHTML	https://github.com/filamentgroup/X-rayHTML	help to build documentation pages
+gral	Style guides (pattern library)	Style Tiles	http://styletil.es/	Design deliverable
+gral	Photo Editor	http://pixlr.com/editor	http://pixlr.com/editor	
+gral	Photo Editor	http://www.photoshop.com/tools	http://www.photoshop.com/tools	
+gral	Photo Editor	http://www.picmonkey.com	http://www.picmonkey.com/	
+gral	Photo Editor	http://www.sumopaint.com/www	http://www.sumopaint.com/www	
+gral	Photo Editor	http://www.psykopaint.com	http://www.psykopaint.com/	
+gral	Photo Editor	http://ipiccy.com	http://ipiccy.com/	
+gral	Photo Editor	http://pixer.us	http://pixer.us/	
+gral	Photo Editor	http://editor.pho.to/es	http://editor.pho.to/es	
+gral	Browsers	Chrome	http://www.google.com/chrome	
+gral	Browsers	Firefox 3.6+	http://www.firefox.com/	
+gral	Browsers	IE 7+	http://windows.microsoft.com/en-US/internet-explorer/downloads/ie	
+gral	Browsers	Safari 5+	http://www.apple.com/safari	
+gral	Browsers	Opera 11+	http://www.opera.com/	NOTE: Opera Mini is an extremely important browser
+gral	Miscellaneous	Ideone	http://ideone.com/	Online compiler/debugger
+gral	Miscellaneous	Regexpal	http://regexpal.com/	Test regular expressions
+gral	Miscellaneous	Sprymedia	http://www.sprymedia.co.uk/article/Design	Web developer tools (grid, rules, etc)
+gral	Miscellaneous	Dragnet	http://www.dragnet.se/webbdesign/websitewireframes.html	Wireframes
+gral	Miscellaneous	Draw.io	https://www.draw.io/	Diagrams
+html5	Outliner	online outliner	http://gsnedders.html5.org/outliner	
+html5	Outliner	h5o	https://code.google.com/p/h5o	
+html5	Validation	html5 validator	http://html5.validator.nu	
+html5	Validation	w3 html5 validator	http://validator.w3.org	
+html5	Validation	w3 link validator	http://validator.w3.org/checklink	
+css3	Playgrounds	cssdesk	http://cssdesk.com	
+css3	Playgrounds	dabblet	http://dabblet.com	
+css3	Playgrounds	css3please	http://css3please.com/	
+css3	CSS frameworks	bootstrap	http://getbootstrap.com	
+css3	CSS frameworks	blueprint	http://www.blueprintcss.org	
+css3	CSS frameworks	zurb	http://foundation.zurb.com/index.html	
+css3	CSS frameworks	goldilocks	http://goldilocksapproach.com/	
+css3	CSS frameworks	skeleton	http://www.getskeleton.com/	
+css3	CSS frameworks	kube	http://imperavi.com/kube/	
+css3	CSS frameworks	yaml	http://www.yaml.de/	
+css3	CSS frameworks	gumby	http://gumbyframework.com/	
+css3	CSS frameworks	susy	http://susy.oddbird.net/	
+css3	CSS frameworks	HTML KickStart	http://www.99lime.com/elements/	
+css3	CSS grid systems	emerald	http://lmc-eu.github.io/emerald/	Responsive grid system
+css3	CSS grid systems	lessframework	http://lessframework.com/	CSS grid system for designing adaptive web­sites. It contains 4 layouts and 3 sets of typography presets, all based on a single grid.
+css3	CSS grid systems	tuktuk	http://tuktuk.tapquo.com/	
+css3	CSS grid systems	css-smart-grid	http://dryan.github.io/css-smart-grid/	CSS Smart Grid builds on the popular 960 grid concept, mixing in responsive grids that are “mobile first”
+css3	CSS grid systems	rwdgrid	http://rwdgrid.com/	Grid system based on popular 960grid , which is responsive and ranges from mobile, tablet, laptops and wide screen displays
+css3	CSS grid systems	dead-simple-grid	http://mourner.github.io/dead-simple-grid/	responsive CSS grid micro framework
+css3	Resets	normalize.css	http://necolas.github.com/normalize.css	
+css3	CSS preprocessors	less	http://lesscss.org	
+css3	CSS preprocessors	sass	http://sass-lang.com	
+css3	Validation	jigsaw	http://jigsaw.w3.org/css-validator	
+css3	Test web sites	css3test	http://css3test.com	
+css3	Color scheme	colorschemedesigner	http://colorschemedesigner.com	
+css3	Color scheme	colorcombos	http://colorcombos.com	
+css3	Color scheme	adobe kuler color-wheel	https://kuler.adobe.com/create/color-wheel	
+css3	CSS easing animation tools	cubic-bezier	http://cubic-bezier.com	
+css3	CSS easing animation tools	ceaser	http://matthewlein.com/ceaser	
+css3	Lorem Ipsum	lipsum	http://es.lipsum.com	
+css3	CSS3 Generator	css3generator	http://css3generator.com	
+css3	CSS3 Generator	css3 mikeplate	http://css3.mikeplate.com	
+css3	CSS3 Generator	css3.me	http://www.css3.me	
+css3	CSS3 Generator	colorzilla gradient-editor	http://www.colorzilla.com/gradient-editor	
+css3	Fonts	fontsquirrel	http://www.fontsquirrel.com	
+css3	Fonts	google fonts	https://www.google.com/fonts	
+css3	Fonts	cooltext	http://cooltext.com	
+css3	Fonts	Font-Awesome	http://fortawesome.github.io/Font-Awesome/	
+css3	Fonts	glyphicon - fontello	http://fontello.com/	
+css3	Icons	mricons	http://www.mricons.com	
+css3	Icons	logotypemaker	http://logotypemaker.com	
+css3	Icons	icomoon	http://icomoon.io/	
+css3	Icons	flaticon	http://www.flaticon.com/search/point	
+css3	Icons	linea.io	http://linea.io/	
+css3	Icons	deviantart	http://brsev.deviantart.com/art/Token-128429570	
+css3	Miscellaneous	psd2css	http://psd2cssonline.com	Convertir photoshop/gimp a css
+javascript	Polyfills	Html5shiv	http://html5shim.googlecode.com/svn/trunk/html5.js	"enables" html5 in older versions of IE
+javascript	Polyfills	Respond.js	https://github.com/scottjehl/Respond	enables media queries support for IE8 and below
+javascript	Polyfills	selectivizr	http://selectivizr.com/	emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8
+javascript	Polyfills	html5-details-jquery	http://mathiasbynens.be/notes/html5-details-jquery	polyfill details tag (hide txt)
+javascript	Javascript libraries	requirejs	http://requirejs.org	
+javascript	Javascript libraries	prefixfree	https://github.com/LeaVerou/prefixfree	Add css vendor prefix automatically
+javascript	Javascript libraries	Modernizr	http://modernizr.com/	JavaScript library that detects HTML5 and CSS3 features in the userâ€™s browser
+javascript	Javascript libraries	underscore	http://underscorejs.org/	Useful functional programming helpers
+javascript	Javascript libraries	yepnope	http://yepnopejs.com/	Super-fast asynchronous conditional resource loader. Allows you to load only the scripts that your users need
+javascript	Javascript libraries	Mobify	http://www.mobify.com/	Improving responsive sites by providing responsive images, JS/CSS optimization, Adaptive Templating and more
+javascript	Javascript libraries	htmltable_export	http://ngiriraj.com/pages/htmltable_export/demo.php	
+javascript	Javascript libraries	tableExport	http://kayalshri.github.io/tableExport.jquery.plugin/	jquery plugin
+javascript	Javascript libraries	jsPDF	https://github.com/MrRio/jsPDF	Generate PDF files in JavaScript
+javascript	Javascript libraries	FileSaver	https://github.com/eligrey/FileSaver.js/	An HTML5 saveAs() FileSaver implementation
+javascript	CDNs	cdnjs	http://cdnjs.com	
+javascript	Javascript canvas libraries	kineticjs	http://kineticjs.com	
+javascript	Javascript canvas libraries	gojs	http://www.gojs.net/latest/index.html	
+javascript	Javascript canvas libraries	threejs	http://threejs.org	
+javascript	Javascript frameworks	montagejs	http://montagejs.org	
